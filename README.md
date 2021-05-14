@@ -1,5 +1,5 @@
 # Smart-Calculator
- A simple calculator in Python that supports basic operaions, variable and parenthesis. It uses postfix notation, stacks and dictionaries.
+ A simple calculator in Python that supports basic operations, variable and parenthesis. It uses postfix notation, stacks and dictionaries.
  I made this project for JetBrains Academy
 
 # How to convert infix to postfix
