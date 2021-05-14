@@ -51,6 +51,10 @@ def convert_to_postfix(parts: list[str]):
     operator_stack = deque()
     parenthesis_layer = 0
 
+    if is_operator(parts[0]):
+        print_invalid()
+        return None
+
     for p in parts:
         if p.startswith('('):
             parenthesis_layer += 1
@@ -156,6 +160,7 @@ def split_parts(expression: str):
     divisions = []
     expression = expression.replace(' ', '')
 
+    # Marks where the string needs to be split with "|"
     for letter_num in range(len(expression)):
         letter = expression[letter_num]
 
